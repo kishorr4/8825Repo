@@ -26,7 +26,7 @@ terraform {
   backend "azurerm" {
     resource_group_name  = "RAJRG"
     storage_account_name = "rajstoragenew8825"
-    container_name       = "$log"
+    container_name       = "rajtn"
     key                  = "raj.tfstate"
   }
 }
