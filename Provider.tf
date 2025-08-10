@@ -5,6 +5,12 @@ terraform {
       version = "4.38.1"
     }
   }
+  backend "azurerm" {
+    resource_group_name  = "raj"
+    storage_account_name = "rajstorage9aug"
+    container_name       = "rajnt"
+    key                  = "terraform.tfstate"
+  }
 }
 provider "azurerm" {
   features {}
