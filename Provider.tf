@@ -9,7 +9,7 @@ terraform {
     resource_group_name  = "raj"
     storage_account_name = "rajstorage9aug"
     container_name       = "rajnt"
-    key                  = "terraform.tfstate"
+    key                  = "raj.tfstate"
   }
 }
 provider "azurerm" {
