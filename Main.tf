@@ -21,12 +21,3 @@ resource "azurerm_subnet" "tolukasubnet1" {
   virtual_network_name = azurerm_virtual_network.tolukavnet.name
   address_prefixes     = ["10.0.1.0/24"]
 }
-
-terraform {
-  backend "azurerm" {
-    resource_group_name  = "raj"
-    storage_account_name = "rajstorage9aug"
-    container_name       = "rajnt"
-    key                  = "raj.tfstate"
-  }
-}
